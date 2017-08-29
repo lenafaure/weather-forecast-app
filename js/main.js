@@ -11,8 +11,8 @@ function loadWeather() {
     if(zip === ''){
         zip = "Paris";
     }
-    var conditionsPath = "http://api.wunderground.com/api/9baa1f06923f2604/conditions/q/FR/"+ zip +".json";
-    var forecastPath = "http://api.wunderground.com/api/9baa1f06923f2604/forecast/q/FR/"+ zip +".json";
+    var conditionsPath = "https://api.wunderground.com/api/9baa1f06923f2604/conditions/q/FR/"+ zip +".json";
+    var forecastPath = "https://api.wunderground.com/api/9baa1f06923f2604/forecast/q/FR/"+ zip +".json";
 
     // GET THE CONDITIONS
     weatherConditions.open('GET', conditionsPath, true);
